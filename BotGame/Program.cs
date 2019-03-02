@@ -64,19 +64,12 @@ namespace BotGame
 
                         var klava = new InlineKeyboardMarkup(btns);
                         await botClient.SendPhotoAsync(e.CallbackQuery.Message.Chat.Id, "https://cs8.pikabu.ru/post_img/big/2016/06/19/10/146635589611057362.jpg", "Это основное место. Хочешь перейти на рынок или пойти домой?", replyMarkup: klava);
-
-                        //await botClient.SendPhotoAsync(e.CallbackQuery.Message.Chat.Id, "https://cs8.pikabu.ru/post_img/big/2016/06/19/10/146635589611057362.jpg", "Это основное место");
-                        //await botClient.SendTextMessageAsync(e.CallbackQuery.Message.Chat.Id, "Хочешь перейти на рынок или пойти домой?");
-
-                        //await GetRinokPage(e.CallbackQuery.Message.Chat);
-                        //await GetDomPage(e.CallbackQuery.Message.Chat);
                         break;
                     }
 
                 case "/market":
                     {
                         await botClient.SendPhotoAsync(e.CallbackQuery.Message.Chat.Id, "https://cs4.pikabu.ru/post_img/2016/06/19/10/1466355878118082698.jpg", "Это рынок");
-                        //await botClient.SendPhotoAsync(e.CallbackQuery.Message.Chat.Id, "https://cs4.pikabu.ru/post_img/2016/06/19/10/1466355878118082698.jpg", "Это рынок");
                         break;
                     }
 
@@ -84,10 +77,6 @@ namespace BotGame
                     {
                         await botClient.SendPhotoAsync(e.CallbackQuery.Message.Chat.Id, "http://www.gamer.ru/system/attached_images/images/000/343/227/original/snapshot20101128130437_20101128_1197020013.jpg");
                         await botClient.SendPhotoAsync(e.CallbackQuery.Message.Chat.Id, "http://www.silenthillmemories.net/allison_road/arts/pics/allison_road_art_2015.10.09_02_lakeside_cabin_exterior.jpg", "Да это твой дом))) XD");
-
-
-                        //await botClient.SendPhotoAsync(e.CallbackQuery.Message.Chat.Id, "http://www.gamer.ru/system/attached_images/images/000/343/227/original/snapshot20101128130437_20101128_1197020013.jpg");
-                        //await botClient.SendPhotoAsync(e.CallbackQuery.Message.Chat.Id, "http://www.silenthillmemories.net/allison_road/arts/pics/allison_road_art_2015.10.09_02_lakeside_cabin_exterior.jpg", "Да это твой дом))) XD");
                         break;
                     }
             }
